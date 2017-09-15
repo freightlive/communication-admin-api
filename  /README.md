@@ -20,11 +20,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/bumbal/communication-server-administration-api.git"
+      "url": "https://github.com/bumbal/communication-admin-api.git"
     }
   ],
   "require": {
-    "bumbal/communication-server-administration-api": "*@dev"
+    "bumbal/communication-admin-api": "*@dev"
   }
 }
 ```
