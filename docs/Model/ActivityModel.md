@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **send_executed** | **bool** | Send an Exceuted message for this activity | [optional] 
 **send_cancelled** | **bool** | Send an Cancelled message for this activity | [optional] 
 **token** | **string** | GUID used for external identification | [optional] 
-**messages** | [**\BumbalCommunicationAdmin\Model\MessageModel[]**](MessageModel.md) |  | [optional] 
+**messages** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]**](MessageModel.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

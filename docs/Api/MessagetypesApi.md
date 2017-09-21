@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **listMessageTypes**
-> \BumbalCommunicationAdmin\Model\MessageTypeModel[] listMessageTypes()
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageTypeModel[] listMessageTypes()
 
 List all MessageTypes
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MessageTypeModel[]**](../Model/MessageTypeModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageTypeModel[]**](../Model/MessageTypeModel.md)
 
 ### Authorization
 

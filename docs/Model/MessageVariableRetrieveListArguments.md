@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**options** | [**\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel**](MessageVariableOptionsModel.md) |  | [optional] 
-**filters** | [**\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel**](MessageVariableFiltersModel.md) |  | [optional] 
+**options** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel**](MessageVariableOptionsModel.md) |  | [optional] 
+**filters** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel**](MessageVariableFiltersModel.md) |  | [optional] 
 **limit** | **int** |  | [optional] 
 **offset** | **int** |  | [optional] 
 **search_text** | **string** |  | [optional] 

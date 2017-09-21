@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createMapping**
-> \BumbalCommunicationAdmin\Model\ApiResponse createMapping($body)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse createMapping($body)
 
 Create a Mapping
 
@@ -29,7 +29,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\MappingApi();
-$body = new \BumbalCommunicationAdmin\Model\MappingModel(); // \BumbalCommunicationAdmin\Model\MappingModel | Mapping object
+$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel | Mapping object
 
 try {
     $result = $api_instance->createMapping($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BumbalCommunicationAdmin\Model\MappingModel**](../Model/\BumbalCommunicationAdmin\Model\MappingModel.md)| Mapping object | [optional]
+ **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel**](../Model/MappingModel.md)| Mapping object | [optional]
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteMapping**
-> \BumbalCommunicationAdmin\Model\ApiResponse deleteMapping($mapping_id)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse deleteMapping($mapping_id)
 
 Delete a mapping
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveListMapping**
-> \BumbalCommunicationAdmin\Model\MappingListResponse retrieveListMapping($arguments)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse retrieveListMapping($arguments)
 
 Retrieve List of Mapping
 
@@ -129,7 +129,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\MappingApi();
-$arguments = new \BumbalCommunicationAdmin\Model\MappingRetrieveListArguments(); // \BumbalCommunicationAdmin\Model\MappingRetrieveListArguments | Mapping RetrieveList Arguments
+$arguments = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments | Mapping RetrieveList Arguments
 
 try {
     $result = $api_instance->retrieveListMapping($arguments);
@@ -144,11 +144,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **arguments** | [**\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments**](../Model/\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments.md)| Mapping RetrieveList Arguments |
+ **arguments** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments**](../Model/MappingRetrieveListArguments.md)| Mapping RetrieveList Arguments |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MappingListResponse**](../Model/MappingListResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse**](../Model/MappingListResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveMapping**
-> \BumbalCommunicationAdmin\Model\MappingModel retrieveMapping($mapping_id, $include_message_type_name, $include_delivery_method_name, $include_template_name, $include_template_object)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel retrieveMapping($mapping_id, $include_message_type_name, $include_delivery_method_name, $include_template_name, $include_template_object)
 
 Retrieve a mapping
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MappingModel**](../Model/MappingModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel**](../Model/MappingModel.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateMapping**
-> \BumbalCommunicationAdmin\Model\ApiResponse updateMapping($mapping_id, $body)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse updateMapping($mapping_id, $body)
 
 Update an mapping
 
@@ -238,7 +238,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 
 $api_instance = new BumbalCommunicationAdmin\Api\MappingApi();
 $mapping_id = 789; // int | ID of mapping to update
-$body = new \BumbalCommunicationAdmin\Model\MappingModel(); // \BumbalCommunicationAdmin\Model\MappingModel | Activity object that needs to be updated
+$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel | Activity object that needs to be updated
 
 try {
     $result = $api_instance->updateMapping($mapping_id, $body);
@@ -254,11 +254,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **mapping_id** | **int**| ID of mapping to update |
- **body** | [**\BumbalCommunicationAdmin\Model\MappingModel**](../Model/\BumbalCommunicationAdmin\Model\MappingModel.md)| Activity object that needs to be updated | [optional]
+ **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel**](../Model/MappingModel.md)| Activity object that needs to be updated | [optional]
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 

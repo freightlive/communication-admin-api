@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **messageRetrieve**
-> \BumbalCommunicationAdmin\Model\MessageModel messageRetrieve($message_id)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel messageRetrieve($message_id)
 
 Retrieve a Message
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MessageModel**](../Model/MessageModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel**](../Model/MessageModel.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveListMessages**
-> \BumbalCommunicationAdmin\Model\MessageModel[] retrieveListMessages($arguments)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[] retrieveListMessages($arguments)
 
 Retrieve List of Messages
 
@@ -76,7 +76,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\MessagesApi();
-$arguments = new \BumbalCommunicationAdmin\Model\MessageRetrieveListArguments(); // \BumbalCommunicationAdmin\Model\MessageRetrieveListArguments | Messages RetrieveList Arguments
+$arguments = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments | Messages RetrieveList Arguments
 
 try {
     $result = $api_instance->retrieveListMessages($arguments);
@@ -91,11 +91,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **arguments** | [**\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments**](../Model/\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments.md)| Messages RetrieveList Arguments |
+ **arguments** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments**](../Model/MessageRetrieveListArguments.md)| Messages RetrieveList Arguments |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MessageModel[]**](../Model/MessageModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]**](../Model/MessageModel.md)
 
 ### Authorization
 

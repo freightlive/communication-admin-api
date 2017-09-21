@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**options** | [**\BumbalCommunicationAdmin\Model\SettingOptionsModel**](SettingOptionsModel.md) |  | [optional] 
-**filters** | [**\BumbalCommunicationAdmin\Model\SettingFiltersModel**](SettingFiltersModel.md) |  | [optional] 
+**options** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingOptionsModel**](SettingOptionsModel.md) |  | [optional] 
+**filters** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingFiltersModel**](SettingFiltersModel.md) |  | [optional] 
 **sorting_column** | **string** | Sorting Column | [optional] 
 **sorting_direction** | **string** | Sorting Direction | [optional] 
 **limit** | **int** |  | [optional] 

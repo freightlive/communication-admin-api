@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **retrieveActivity**
-> \BumbalCommunicationAdmin\Model\ActivityModel retrieveActivity($activity_id, $include_messages, $include_messages_history)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel retrieveActivity($activity_id, $include_messages, $include_messages_history)
 
 Find activity by ID
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ActivityModel**](../Model/ActivityModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel**](../Model/ActivityModel.md)
 
 ### Authorization
 

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **retrieveListSettings**
-> \BumbalCommunicationAdmin\Model\SettingListResponse retrieveListSettings($arguments)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse retrieveListSettings($arguments)
 
 Retrieve List of Settings
 
@@ -27,7 +27,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\SettingsApi();
-$arguments = new \BumbalCommunicationAdmin\Model\SettingRetrieveListArguments(); // \BumbalCommunicationAdmin\Model\SettingRetrieveListArguments | Settings RetrieveList Arguments
+$arguments = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments | Settings RetrieveList Arguments
 
 try {
     $result = $api_instance->retrieveListSettings($arguments);
@@ -42,11 +42,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **arguments** | [**\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments**](../Model/\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments.md)| Settings RetrieveList Arguments |
+ **arguments** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments**](../Model/SettingRetrieveListArguments.md)| Settings RetrieveList Arguments |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\SettingListResponse**](../Model/SettingListResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse**](../Model/SettingListResponse.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **settingRetrieve**
-> \BumbalCommunicationAdmin\Model\SettingModel settingRetrieve($setting_id)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel settingRetrieve($setting_id)
 
 Retrieve a Setting
 
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\SettingModel**](../Model/SettingModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel**](../Model/SettingModel.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **settingsUpdate**
-> \BumbalCommunicationAdmin\Model\ApiResponse settingsUpdate($setting_id, $body)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse settingsUpdate($setting_id, $body)
 
 Update a Setting
 
@@ -128,7 +128,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 
 $api_instance = new BumbalCommunicationAdmin\Api\SettingsApi();
 $setting_id = 789; // int | ID of Setting to update
-$body = new \BumbalCommunicationAdmin\Model\SettingModel(); // \BumbalCommunicationAdmin\Model\SettingModel | Settings object
+$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel | Settings object
 
 try {
     $result = $api_instance->settingsUpdate($setting_id, $body);
@@ -144,11 +144,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **setting_id** | **int**| ID of Setting to update |
- **body** | [**\BumbalCommunicationAdmin\Model\SettingModel**](../Model/\BumbalCommunicationAdmin\Model\SettingModel.md)| Settings object | [optional]
+ **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel**](../Model/SettingModel.md)| Settings object | [optional]
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 

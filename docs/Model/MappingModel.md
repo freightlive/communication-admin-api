@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **id** | **int** | Identifier | [optional] 
 **template_id** | **int** | Template ID | [optional] 
 **template_name** | **string** | Template Name | [optional] 
-**template** | [**\BumbalCommunicationAdmin\Model\TemplateModel**](TemplateModel.md) |  | [optional] 
+**template** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel**](TemplateModel.md) |  | [optional] 
 **delivery_method_id** | **int** | Delivery Method ID | [optional] 
 **delivery_method_name** | **string** | Delivery Method Name | [optional] 
 **message_type_id** | **int** | MessageType ID | [optional] 

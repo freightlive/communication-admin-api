@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createMessageVariable**
-> \BumbalCommunicationAdmin\Model\ApiResponse createMessageVariable($body)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse createMessageVariable($body)
 
 Create a MessageVariable
 
@@ -29,7 +29,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\MessagevariablesApi();
-$body = new \BumbalCommunicationAdmin\Model\MessageVariableModel(); // \BumbalCommunicationAdmin\Model\MessageVariableModel | MessageVariable object
+$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel | MessageVariable object
 
 try {
     $result = $api_instance->createMessageVariable($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/\BumbalCommunicationAdmin\Model\MessageVariableModel.md)| MessageVariable object |
+ **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/MessageVariableModel.md)| MessageVariable object |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteMessageVariable**
-> \BumbalCommunicationAdmin\Model\ApiResponse deleteMessageVariable($message_variable_id)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse deleteMessageVariable($message_variable_id)
 
 Delete a message variables
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveListMessageVariables**
-> \BumbalCommunicationAdmin\Model\MessageVariableModel[] retrieveListMessageVariables($arguments)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel[] retrieveListMessageVariables($arguments)
 
 Retrieve List of Message Variables
 
@@ -129,7 +129,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\MessagevariablesApi();
-$arguments = new \BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments(); // \BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments | MessageVariables RetrieveList Arguments
+$arguments = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments | MessageVariables RetrieveList Arguments
 
 try {
     $result = $api_instance->retrieveListMessageVariables($arguments);
@@ -144,11 +144,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **arguments** | [**\BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments**](../Model/\BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments.md)| MessageVariables RetrieveList Arguments |
+ **arguments** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableRetrieveListArguments**](../Model/MessageVariableRetrieveListArguments.md)| MessageVariables RetrieveList Arguments |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MessageVariableModel[]**](../Model/MessageVariableModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel[]**](../Model/MessageVariableModel.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveMessageVariable**
-> \BumbalCommunicationAdmin\Model\MessageVariableModel retrieveMessageVariable($message_variable_id)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel retrieveMessageVariable($message_variable_id)
 
 Retrieve a message variable
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/MessageVariableModel.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/MessageVariableModel.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateMessageVariable**
-> \BumbalCommunicationAdmin\Model\ApiResponse updateMessageVariable($message_variable_id, $body)
+> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse updateMessageVariable($message_variable_id, $body)
 
 Update an MessageVariable
 
@@ -230,7 +230,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 
 $api_instance = new BumbalCommunicationAdmin\Api\MessagevariablesApi();
 $message_variable_id = 789; // int | ID of Message Variable to update
-$body = new \BumbalCommunicationAdmin\Model\MessageVariableModel(); // \BumbalCommunicationAdmin\Model\MessageVariableModel | Message Variable object that needs to be updated
+$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel | Message Variable object that needs to be updated
 
 try {
     $result = $api_instance->updateMessageVariable($message_variable_id, $body);
@@ -246,11 +246,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **message_variable_id** | **int**| ID of Message Variable to update |
- **body** | [**\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/\BumbalCommunicationAdmin\Model\MessageVariableModel.md)| Message Variable object that needs to be updated | [optional]
+ **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableModel**](../Model/MessageVariableModel.md)| Message Variable object that needs to be updated | [optional]
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
