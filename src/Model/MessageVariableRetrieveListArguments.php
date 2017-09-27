@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,8 +54,8 @@ class MessageVariableRetrieveListArguments implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel',
-        'filters' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel',
+        'options' => '\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel',
+        'filters' => '\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel',
         'limit' => 'int',
         'offset' => 'int',
         'search_text' => 'string'
@@ -186,7 +186,7 @@ class MessageVariableRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets options
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel
+     * @return \BumbalCommunicationAdmin\Model\MessageVariableOptionsModel
      */
     public function getOptions()
     {
@@ -195,7 +195,7 @@ class MessageVariableRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\MessageVariableOptionsModel $options
      * @return $this
      */
     public function setOptions($options)
@@ -207,7 +207,7 @@ class MessageVariableRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets filters
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel
+     * @return \BumbalCommunicationAdmin\Model\MessageVariableFiltersModel
      */
     public function getFilters()
     {
@@ -216,7 +216,7 @@ class MessageVariableRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageVariableFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\MessageVariableFiltersModel $filters
      * @return $this
      */
     public function setFilters($filters)

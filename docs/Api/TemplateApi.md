@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createTemplate**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse createTemplate($body)
+> \BumbalCommunicationAdmin\Model\ApiResponse createTemplate($body)
 
 Create a Template
 
@@ -29,7 +29,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\TemplateApi();
-$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel | Template object
+$body = new \BumbalCommunicationAdmin\Model\TemplateModel(); // \BumbalCommunicationAdmin\Model\TemplateModel | Template object
 
 try {
     $result = $api_instance->createTemplate($body);
@@ -44,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)| Template object |
+ **body** | [**\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)| Template object |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteTemplate**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse deleteTemplate($template_id)
+> \BumbalCommunicationAdmin\Model\ApiResponse deleteTemplate($template_id)
 
 Delete a Template
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveListTemplate**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse retrieveListTemplate($arguments)
+> \BumbalCommunicationAdmin\Model\TemplateListResponse retrieveListTemplate($arguments)
 
 Retrieve List of Templates
 
@@ -129,7 +129,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\TemplateApi();
-$arguments = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments | Template RetrieveList Arguments
+$arguments = new \BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments(); // \BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments | Template RetrieveList Arguments
 
 try {
     $result = $api_instance->retrieveListTemplate($arguments);
@@ -144,11 +144,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **arguments** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments**](../Model/TemplateRetrieveListArguments.md)| Template RetrieveList Arguments |
+ **arguments** | [**\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments**](../Model/TemplateRetrieveListArguments.md)| Template RetrieveList Arguments |
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse**](../Model/TemplateListResponse.md)
+[**\BumbalCommunicationAdmin\Model\TemplateListResponse**](../Model/TemplateListResponse.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveTemplate**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel retrieveTemplate($template_id)
+> \BumbalCommunicationAdmin\Model\TemplateModel retrieveTemplate($template_id)
 
 Retrieve a Template
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)
+[**\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTemplate**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse updateTemplate($template_id, $body)
+> \BumbalCommunicationAdmin\Model\ApiResponse updateTemplate($template_id, $body)
 
 Update an Template
 
@@ -230,7 +230,7 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 
 $api_instance = new BumbalCommunicationAdmin\Api\TemplateApi();
 $template_id = 789; // int | ID of Template to update
-$body = new \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel(); // \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel | Template object that needs to be updated
+$body = new \BumbalCommunicationAdmin\Model\TemplateModel(); // \BumbalCommunicationAdmin\Model\TemplateModel | Template object that needs to be updated
 
 try {
     $result = $api_instance->updateTemplate($template_id, $body);
@@ -246,11 +246,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **template_id** | **int**| ID of Template to update |
- **body** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)| Template object that needs to be updated | [optional]
+ **body** | [**\BumbalCommunicationAdmin\Model\TemplateModel**](../Model/TemplateModel.md)| Template object that needs to be updated | [optional]
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
 
 ### Authorization
 

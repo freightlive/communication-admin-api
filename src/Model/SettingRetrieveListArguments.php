@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,8 +54,8 @@ class SettingRetrieveListArguments implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingOptionsModel',
-        'filters' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingFiltersModel',
+        'options' => '\BumbalCommunicationAdmin\Model\SettingOptionsModel',
+        'filters' => '\BumbalCommunicationAdmin\Model\SettingFiltersModel',
         'sorting_column' => 'string',
         'sorting_direction' => 'string',
         'limit' => 'int',
@@ -258,7 +258,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets options
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingOptionsModel
+     * @return \BumbalCommunicationAdmin\Model\SettingOptionsModel
      */
     public function getOptions()
     {
@@ -267,7 +267,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\SettingOptionsModel $options
      * @return $this
      */
     public function setOptions($options)
@@ -279,7 +279,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets filters
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingFiltersModel
+     * @return \BumbalCommunicationAdmin\Model\SettingFiltersModel
      */
     public function getFilters()
     {
@@ -288,7 +288,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\SettingFiltersModel $filters
      * @return $this
      */
     public function setFilters($filters)

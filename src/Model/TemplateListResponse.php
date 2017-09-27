@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,7 +54,7 @@ class TemplateListResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel[]',
+        'items' => '\BumbalCommunicationAdmin\Model\TemplateModel[]',
         'count_filtered' => 'int',
         'count_unfiltered' => 'int',
         'count_limited' => 'int'
@@ -180,7 +180,7 @@ class TemplateListResponse implements ArrayAccess
 
     /**
      * Gets items
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel[]
+     * @return \BumbalCommunicationAdmin\Model\TemplateModel[]
      */
     public function getItems()
     {
@@ -189,7 +189,7 @@ class TemplateListResponse implements ArrayAccess
 
     /**
      * Sets items
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel[] $items
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel[] $items
      * @return $this
      */
     public function setItems($items)

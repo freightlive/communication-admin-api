@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,8 +54,8 @@ class MappingRetrieveListArguments implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingOptionsModel',
-        'filters' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingFiltersModel',
+        'options' => '\BumbalCommunicationAdmin\Model\MappingOptionsModel',
+        'filters' => '\BumbalCommunicationAdmin\Model\MappingFiltersModel',
         'sorting_column' => 'string',
         'sorting_direction' => 'string',
         'limit' => 'int',
@@ -258,7 +258,7 @@ class MappingRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets options
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingOptionsModel
+     * @return \BumbalCommunicationAdmin\Model\MappingOptionsModel
      */
     public function getOptions()
     {
@@ -267,7 +267,7 @@ class MappingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\MappingOptionsModel $options
      * @return $this
      */
     public function setOptions($options)
@@ -279,7 +279,7 @@ class MappingRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets filters
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingFiltersModel
+     * @return \BumbalCommunicationAdmin\Model\MappingFiltersModel
      */
     public function getFilters()
     {
@@ -288,7 +288,7 @@ class MappingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\MappingFiltersModel $filters
      * @return $this
      */
     public function setFilters($filters)

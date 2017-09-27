@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -96,7 +96,7 @@ class ActivityApi
      * @param bool $include_messages Include messages (required)
      * @param bool $include_messages_history Include messages History (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel
+     * @return \BumbalCommunicationAdmin\Model\ActivityModel
      */
     public function retrieveActivity($activity_id, $include_messages, $include_messages_history)
     {
@@ -113,7 +113,7 @@ class ActivityApi
      * @param bool $include_messages Include messages (required)
      * @param bool $include_messages_history Include messages History (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ActivityModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveActivityWithHttpInfo($activity_id, $include_messages, $include_messages_history)
     {
@@ -177,15 +177,15 @@ class ActivityApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel',
+                '\BumbalCommunicationAdmin\Model\ActivityModel',
                 '/activity/{activityId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ActivityModel', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ActivityModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ActivityModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

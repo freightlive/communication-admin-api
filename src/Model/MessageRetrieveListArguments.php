@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,8 +54,8 @@ class MessageRetrieveListArguments implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageOptionsModel',
-        'filters' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageFiltersModel',
+        'options' => '\BumbalCommunicationAdmin\Model\MessageOptionsModel',
+        'filters' => '\BumbalCommunicationAdmin\Model\MessageFiltersModel',
         'limit' => 'int',
         'offset' => 'int'
     ];
@@ -180,7 +180,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets options
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageOptionsModel
+     * @return \BumbalCommunicationAdmin\Model\MessageOptionsModel
      */
     public function getOptions()
     {
@@ -189,7 +189,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\MessageOptionsModel $options
      * @return $this
      */
     public function setOptions($options)
@@ -201,7 +201,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets filters
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageFiltersModel
+     * @return \BumbalCommunicationAdmin\Model\MessageFiltersModel
      */
     public function getFilters()
     {
@@ -210,7 +210,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\MessageFiltersModel $filters
      * @return $this
      */
     public function setFilters($filters)

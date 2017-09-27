@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -93,7 +93,7 @@ class DeliverymethodsApi
      * List all DeliveryMethods
      *
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]
+     * @return \BumbalCommunicationAdmin\Model\DeliveryMethodModel[]
      */
     public function listDeliveryMethods()
     {
@@ -107,7 +107,7 @@ class DeliverymethodsApi
      * List all DeliveryMethods
      *
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\DeliveryMethodModel[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listDeliveryMethodsWithHttpInfo()
     {
@@ -143,15 +143,15 @@ class DeliverymethodsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]',
+                '\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]',
                 '/delivery-method'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -60,14 +60,14 @@ class MessageModel implements ArrayAccess
         'message_type_id' => 'int',
         'message_type_name' => 'string',
         'activity_id' => 'int',
-        'template' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel',
-        'scheduled_job' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ScheduledJobModel',
+        'template' => '\BumbalCommunicationAdmin\Model\TemplateModel',
+        'scheduled_job' => '\BumbalCommunicationAdmin\Model\ScheduledJobModel',
         'provider_id' => 'int',
         'provider_name' => 'string',
         'provider_reference' => 'string',
         'sent' => 'bool',
-        'history' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageHistoryModel[]',
-        'content' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageContentModel'
+        'history' => '\BumbalCommunicationAdmin\Model\MessageHistoryModel[]',
+        'content' => '\BumbalCommunicationAdmin\Model\MessageContentModel'
     ];
 
     /**
@@ -366,7 +366,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Gets template
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel
+     * @return \BumbalCommunicationAdmin\Model\TemplateModel
      */
     public function getTemplate()
     {
@@ -375,7 +375,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Sets template
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $template
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $template
      * @return $this
      */
     public function setTemplate($template)
@@ -387,7 +387,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Gets scheduled_job
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ScheduledJobModel
+     * @return \BumbalCommunicationAdmin\Model\ScheduledJobModel
      */
     public function getScheduledJob()
     {
@@ -396,7 +396,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Sets scheduled_job
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ScheduledJobModel $scheduled_job
+     * @param \BumbalCommunicationAdmin\Model\ScheduledJobModel $scheduled_job
      * @return $this
      */
     public function setScheduledJob($scheduled_job)
@@ -492,7 +492,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Gets history
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageHistoryModel[]
+     * @return \BumbalCommunicationAdmin\Model\MessageHistoryModel[]
      */
     public function getHistory()
     {
@@ -501,7 +501,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Sets history
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageHistoryModel[] $history
+     * @param \BumbalCommunicationAdmin\Model\MessageHistoryModel[] $history
      * @return $this
      */
     public function setHistory($history)
@@ -513,7 +513,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Gets content
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageContentModel
+     * @return \BumbalCommunicationAdmin\Model\MessageContentModel
      */
     public function getContent()
     {
@@ -522,7 +522,7 @@ class MessageModel implements ArrayAccess
 
     /**
      * Sets content
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageContentModel $content
+     * @param \BumbalCommunicationAdmin\Model\MessageContentModel $content
      * @return $this
      */
     public function setContent($content)

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -57,7 +57,7 @@ class MappingModel implements ArrayAccess
         'id' => 'int',
         'template_id' => 'int',
         'template_name' => 'string',
-        'template' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel',
+        'template' => '\BumbalCommunicationAdmin\Model\TemplateModel',
         'delivery_method_id' => 'int',
         'delivery_method_name' => 'string',
         'message_type_id' => 'int',
@@ -273,7 +273,7 @@ class MappingModel implements ArrayAccess
 
     /**
      * Gets template
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel
+     * @return \BumbalCommunicationAdmin\Model\TemplateModel
      */
     public function getTemplate()
     {
@@ -282,7 +282,7 @@ class MappingModel implements ArrayAccess
 
     /**
      * Sets template
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $template
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $template
      * @return $this
      */
     public function setTemplate($template)

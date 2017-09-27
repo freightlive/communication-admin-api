@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -92,9 +92,9 @@ class MappingApi
      *
      * Create a Mapping
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel $body Mapping object (optional)
+     * @param \BumbalCommunicationAdmin\Model\MappingModel $body Mapping object (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function createMapping($body = null)
     {
@@ -107,9 +107,9 @@ class MappingApi
      *
      * Create a Mapping
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel $body Mapping object (optional)
+     * @param \BumbalCommunicationAdmin\Model\MappingModel $body Mapping object (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createMappingWithHttpInfo($body = null)
     {
@@ -150,15 +150,15 @@ class MappingApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/mapping'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -174,7 +174,7 @@ class MappingApi
      *
      * @param int $mapping_id ID of the mapping to delete (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function deleteMapping($mapping_id)
     {
@@ -189,7 +189,7 @@ class MappingApi
      *
      * @param int $mapping_id ID of the mapping to delete (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteMappingWithHttpInfo($mapping_id)
     {
@@ -237,15 +237,15 @@ class MappingApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/mapping/{mappingId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -259,9 +259,9 @@ class MappingApi
      *
      * Retrieve List of Mapping
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments $arguments Mapping RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\MappingRetrieveListArguments $arguments Mapping RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse
+     * @return \BumbalCommunicationAdmin\Model\MappingListResponse
      */
     public function retrieveListMapping($arguments)
     {
@@ -274,9 +274,9 @@ class MappingApi
      *
      * Retrieve List of Mapping
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingRetrieveListArguments $arguments Mapping RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\MappingRetrieveListArguments $arguments Mapping RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\MappingListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveListMappingWithHttpInfo($arguments)
     {
@@ -321,15 +321,15 @@ class MappingApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse',
+                '\BumbalCommunicationAdmin\Model\MappingListResponse',
                 '/mapping'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\MappingListResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingListResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\MappingListResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -349,7 +349,7 @@ class MappingApi
      * @param bool $include_template_name Show the text value of the template (required)
      * @param bool $include_template_object Include the template object (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel
+     * @return \BumbalCommunicationAdmin\Model\MappingModel
      */
     public function retrieveMapping($mapping_id, $include_message_type_name, $include_delivery_method_name, $include_template_name, $include_template_object)
     {
@@ -368,7 +368,7 @@ class MappingApi
      * @param bool $include_template_name Show the text value of the template (required)
      * @param bool $include_template_object Include the template object (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\MappingModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveMappingWithHttpInfo($mapping_id, $include_message_type_name, $include_delivery_method_name, $include_template_name, $include_template_object)
     {
@@ -448,15 +448,15 @@ class MappingApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel',
+                '\BumbalCommunicationAdmin\Model\MappingModel',
                 '/mapping/{mappingId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\MappingModel', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\MappingModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -471,9 +471,9 @@ class MappingApi
      * Update an mapping
      *
      * @param int $mapping_id ID of mapping to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel $body Activity object that needs to be updated (optional)
+     * @param \BumbalCommunicationAdmin\Model\MappingModel $body Activity object that needs to be updated (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function updateMapping($mapping_id, $body = null)
     {
@@ -487,9 +487,9 @@ class MappingApi
      * Update an mapping
      *
      * @param int $mapping_id ID of mapping to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel $body Activity object that needs to be updated (optional)
+     * @param \BumbalCommunicationAdmin\Model\MappingModel $body Activity object that needs to be updated (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateMappingWithHttpInfo($mapping_id, $body = null)
     {
@@ -542,15 +542,15 @@ class MappingApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/mapping/{mappingId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

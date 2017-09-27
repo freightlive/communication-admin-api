@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -62,7 +62,7 @@ class ActivityModel implements ArrayAccess
         'send_executed' => 'bool',
         'send_cancelled' => 'bool',
         'token' => 'string',
-        'messages' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]'
+        'messages' => '\BumbalCommunicationAdmin\Model\MessageModel[]'
     ];
 
     /**
@@ -378,7 +378,7 @@ class ActivityModel implements ArrayAccess
 
     /**
      * Gets messages
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]
+     * @return \BumbalCommunicationAdmin\Model\MessageModel[]
      */
     public function getMessages()
     {
@@ -387,7 +387,7 @@ class ActivityModel implements ArrayAccess
 
     /**
      * Sets messages
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[] $messages
+     * @param \BumbalCommunicationAdmin\Model\MessageModel[] $messages
      * @return $this
      */
     public function setMessages($messages)

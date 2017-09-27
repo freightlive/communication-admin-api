@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -92,9 +92,9 @@ class SettingsApi
      *
      * Retrieve List of Settings
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments $arguments Settings RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\SettingRetrieveListArguments $arguments Settings RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse
+     * @return \BumbalCommunicationAdmin\Model\SettingListResponse
      */
     public function retrieveListSettings($arguments)
     {
@@ -107,9 +107,9 @@ class SettingsApi
      *
      * Retrieve List of Settings
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingRetrieveListArguments $arguments Settings RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\SettingRetrieveListArguments $arguments Settings RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\SettingListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveListSettingsWithHttpInfo($arguments)
     {
@@ -154,15 +154,15 @@ class SettingsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse',
+                '\BumbalCommunicationAdmin\Model\SettingListResponse',
                 '/setting'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\SettingListResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingListResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\SettingListResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -178,7 +178,7 @@ class SettingsApi
      *
      * @param int $setting_id ID of setting variable to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel
+     * @return \BumbalCommunicationAdmin\Model\SettingModel
      */
     public function settingRetrieve($setting_id)
     {
@@ -193,7 +193,7 @@ class SettingsApi
      *
      * @param int $setting_id ID of setting variable to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\SettingModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function settingRetrieveWithHttpInfo($setting_id)
     {
@@ -241,15 +241,15 @@ class SettingsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel',
+                '\BumbalCommunicationAdmin\Model\SettingModel',
                 '/setting/{settingId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\SettingModel', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\SettingModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -264,9 +264,9 @@ class SettingsApi
      * Update a Setting
      *
      * @param int $setting_id ID of Setting to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel $body Settings object (optional)
+     * @param \BumbalCommunicationAdmin\Model\SettingModel $body Settings object (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function settingsUpdate($setting_id, $body = null)
     {
@@ -280,9 +280,9 @@ class SettingsApi
      * Update a Setting
      *
      * @param int $setting_id ID of Setting to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel $body Settings object (optional)
+     * @param \BumbalCommunicationAdmin\Model\SettingModel $body Settings object (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function settingsUpdateWithHttpInfo($setting_id, $body = null)
     {
@@ -335,15 +335,15 @@ class SettingsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/setting/{settingId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

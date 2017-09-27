@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **listDeliveryMethods**
-> \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[] listDeliveryMethods()
+> \BumbalCommunicationAdmin\Model\DeliveryMethodModel[] listDeliveryMethods()
 
 List all DeliveryMethods
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]**](../Model/DeliveryMethodModel.md)
+[**\BumbalCommunicationAdmin\Model\DeliveryMethodModel[]**](../Model/DeliveryMethodModel.md)
 
 ### Authorization
 

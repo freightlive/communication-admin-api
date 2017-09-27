@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**options** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingOptionsModel**](MappingOptionsModel.md) |  | [optional] 
-**filters** | [**\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingFiltersModel**](MappingFiltersModel.md) |  | [optional] 
+**options** | [**\BumbalCommunicationAdmin\Model\MappingOptionsModel**](MappingOptionsModel.md) |  | [optional] 
+**filters** | [**\BumbalCommunicationAdmin\Model\MappingFiltersModel**](MappingFiltersModel.md) |  | [optional] 
 **sorting_column** | **string** | Sorting Column | [optional] 
 **sorting_direction** | **string** | Sorting Direction | [optional] 
 **limit** | **int** |  | [optional] 

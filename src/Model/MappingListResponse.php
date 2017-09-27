@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,7 +54,7 @@ class MappingListResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel[]',
+        'items' => '\BumbalCommunicationAdmin\Model\MappingModel[]',
         'count_filtered' => 'int',
         'count_unfiltered' => 'int',
         'count_limited' => 'int'
@@ -180,7 +180,7 @@ class MappingListResponse implements ArrayAccess
 
     /**
      * Gets items
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel[]
+     * @return \BumbalCommunicationAdmin\Model\MappingModel[]
      */
     public function getItems()
     {
@@ -189,7 +189,7 @@ class MappingListResponse implements ArrayAccess
 
     /**
      * Sets items
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MappingModel[] $items
+     * @param \BumbalCommunicationAdmin\Model\MappingModel[] $items
      * @return $this
      */
     public function setItems($items)

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -92,9 +92,9 @@ class TemplateApi
      *
      * Create a Template
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $body Template object (required)
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $body Template object (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function createTemplate($body)
     {
@@ -107,9 +107,9 @@ class TemplateApi
      *
      * Create a Template
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $body Template object (required)
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $body Template object (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTemplateWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class TemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/template'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -178,7 +178,7 @@ class TemplateApi
      *
      * @param int $template_id ID of the template to delete (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function deleteTemplate($template_id)
     {
@@ -193,7 +193,7 @@ class TemplateApi
      *
      * @param int $template_id ID of the template to delete (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTemplateWithHttpInfo($template_id)
     {
@@ -241,15 +241,15 @@ class TemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/template/{templateId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -263,9 +263,9 @@ class TemplateApi
      *
      * Retrieve List of Templates
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments $arguments Template RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments $arguments Template RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse
+     * @return \BumbalCommunicationAdmin\Model\TemplateListResponse
      */
     public function retrieveListTemplate($arguments)
     {
@@ -278,9 +278,9 @@ class TemplateApi
      *
      * Retrieve List of Templates
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments $arguments Template RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\TemplateRetrieveListArguments $arguments Template RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\TemplateListResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveListTemplateWithHttpInfo($arguments)
     {
@@ -325,15 +325,15 @@ class TemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse',
+                '\BumbalCommunicationAdmin\Model\TemplateListResponse',
                 '/template'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\TemplateListResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateListResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\TemplateListResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -349,7 +349,7 @@ class TemplateApi
      *
      * @param int $template_id ID of template to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel
+     * @return \BumbalCommunicationAdmin\Model\TemplateModel
      */
     public function retrieveTemplate($template_id)
     {
@@ -364,7 +364,7 @@ class TemplateApi
      *
      * @param int $template_id ID of template to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\TemplateModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveTemplateWithHttpInfo($template_id)
     {
@@ -412,15 +412,15 @@ class TemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel',
+                '\BumbalCommunicationAdmin\Model\TemplateModel',
                 '/template/{templateId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\TemplateModel', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\TemplateModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -435,9 +435,9 @@ class TemplateApi
      * Update an Template
      *
      * @param int $template_id ID of Template to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $body Template object that needs to be updated (optional)
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $body Template object that needs to be updated (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
      */
     public function updateTemplate($template_id, $body = null)
     {
@@ -451,9 +451,9 @@ class TemplateApi
      * Update an Template
      *
      * @param int $template_id ID of Template to update (required)
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateModel $body Template object that needs to be updated (optional)
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $body Template object that needs to be updated (optional)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTemplateWithHttpInfo($template_id, $body = null)
     {
@@ -506,15 +506,15 @@ class TemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse',
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
                 '/template/{templateId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

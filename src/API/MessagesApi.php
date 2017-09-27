@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\API;
+namespace BumbalCommunicationAdmin\API;
 
 use \BumbalCommunicationAdmin\ApiClient;
 use \BumbalCommunicationAdmin\ApiException;
@@ -94,7 +94,7 @@ class MessagesApi
      *
      * @param int $message_id ID of Message to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel
+     * @return \BumbalCommunicationAdmin\Model\MessageModel
      */
     public function messageRetrieve($message_id)
     {
@@ -109,7 +109,7 @@ class MessagesApi
      *
      * @param int $message_id ID of Message to return (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\MessageModel, HTTP status code, HTTP response headers (array of strings)
      */
     public function messageRetrieveWithHttpInfo($message_id)
     {
@@ -157,15 +157,15 @@ class MessagesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel',
+                '\BumbalCommunicationAdmin\Model\MessageModel',
                 '/message/{messageId}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\MessageModel', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\MessageModel', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -179,9 +179,9 @@ class MessagesApi
      *
      * Retrieve List of Messages
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments $arguments Messages RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\MessageRetrieveListArguments $arguments Messages RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]
+     * @return \BumbalCommunicationAdmin\Model\MessageModel[]
      */
     public function retrieveListMessages($arguments)
     {
@@ -194,9 +194,9 @@ class MessagesApi
      *
      * Retrieve List of Messages
      *
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageRetrieveListArguments $arguments Messages RetrieveList Arguments (required)
+     * @param \BumbalCommunicationAdmin\Model\MessageRetrieveListArguments $arguments Messages RetrieveList Arguments (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
-     * @return array of \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BumbalCommunicationAdmin\Model\MessageModel[], HTTP status code, HTTP response headers (array of strings)
      */
     public function retrieveListMessagesWithHttpInfo($arguments)
     {
@@ -241,15 +241,15 @@ class MessagesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]',
+                '\BumbalCommunicationAdmin\Model\MessageModel[]',
                 '/message'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\MessageModel[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\MessageModel[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\MessageModel[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,8 +54,8 @@ class TemplateRetrieveListArguments implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'options' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateOptionsModel',
-        'filters' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateFiltersModel',
+        'options' => '\BumbalCommunicationAdmin\Model\TemplateOptionsModel',
+        'filters' => '\BumbalCommunicationAdmin\Model\TemplateFiltersModel',
         'sorting_column' => 'string',
         'sorting_direction' => 'string',
         'limit' => 'int',
@@ -260,7 +260,7 @@ class TemplateRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets options
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateOptionsModel
+     * @return \BumbalCommunicationAdmin\Model\TemplateOptionsModel
      */
     public function getOptions()
     {
@@ -269,7 +269,7 @@ class TemplateRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\TemplateOptionsModel $options
      * @return $this
      */
     public function setOptions($options)
@@ -281,7 +281,7 @@ class TemplateRetrieveListArguments implements ArrayAccess
 
     /**
      * Gets filters
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateFiltersModel
+     * @return \BumbalCommunicationAdmin\Model\TemplateFiltersModel
      */
     public function getFilters()
     {
@@ -290,7 +290,7 @@ class TemplateRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\TemplateFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\TemplateFiltersModel $filters
      * @return $this
      */
     public function setFilters($filters)

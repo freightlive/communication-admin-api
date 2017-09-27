@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model;
+namespace BumbalCommunicationAdmin\Model;
 
 use \ArrayAccess;
 
@@ -54,7 +54,7 @@ class SettingListResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'items' => '\BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel[]',
+        'items' => '\BumbalCommunicationAdmin\Model\SettingModel[]',
         'count_filtered' => 'int',
         'count_unfiltered' => 'int',
         'count_limited' => 'int'
@@ -180,7 +180,7 @@ class SettingListResponse implements ArrayAccess
 
     /**
      * Gets items
-     * @return \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel[]
+     * @return \BumbalCommunicationAdmin\Model\SettingModel[]
      */
     public function getItems()
     {
@@ -189,7 +189,7 @@ class SettingListResponse implements ArrayAccess
 
     /**
      * Sets items
-     * @param \BumbalCommunicationAdmin\BumbalCommunicationAdmin\Model\SettingModel[] $items
+     * @param \BumbalCommunicationAdmin\Model\SettingModel[] $items
      * @return $this
      */
     public function setItems($items)
