@@ -83,6 +83,7 @@ All URIs are relative to *https://communication.bumbal.eu/admin/v1*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ActivityApi* | [**retrieveActivity**](docs/Api/ActivityApi.md#retrieveactivity) | **GET** /activity/{activityId} | Find activity by ID
+*ActivityApi* | [**triggerMessageForActivity**](docs/Api/ActivityApi.md#triggermessageforactivity) | **POST** /activity/trigger-message | Trigger a message for an Activity
 *DeliverymethodsApi* | [**listDeliveryMethods**](docs/Api/DeliverymethodsApi.md#listdeliverymethods) | **GET** /delivery-method | List all DeliveryMethods
 *MappingApi* | [**createMapping**](docs/Api/MappingApi.md#createmapping) | **POST** /mapping | Create a Mapping
 *MappingApi* | [**deleteMapping**](docs/Api/MappingApi.md#deletemapping) | **DELETE** /mapping/{mappingId} | Delete a mapping
@@ -140,6 +141,7 @@ Class | Method | HTTP request | Description
  - [TemplateModel](docs/Model/TemplateModel.md)
  - [TemplateOptionsModel](docs/Model/TemplateOptionsModel.md)
  - [TemplateRetrieveListArguments](docs/Model/TemplateRetrieveListArguments.md)
+ - [TriggerMessageArgsModel](docs/Model/TriggerMessageArgsModel.md)
 
 
 ## Documentation For Authorization

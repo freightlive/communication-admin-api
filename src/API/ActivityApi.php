@@ -193,4 +193,84 @@ class ActivityApi
             throw $e;
         }
     }
+
+    /**
+     * Operation triggerMessageForActivity
+     *
+     * Trigger a message for an Activity
+     *
+     * @param \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel $body Trigger Message Args (optional)
+     * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
+     * @return \BumbalCommunicationAdmin\Model\ApiResponse
+     */
+    public function triggerMessageForActivity($body = null)
+    {
+        list($response) = $this->triggerMessageForActivityWithHttpInfo($body);
+        return $response;
+    }
+
+    /**
+     * Operation triggerMessageForActivityWithHttpInfo
+     *
+     * Trigger a message for an Activity
+     *
+     * @param \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel $body Trigger Message Args (optional)
+     * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
+     * @return array of \BumbalCommunicationAdmin\Model\ApiResponse, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function triggerMessageForActivityWithHttpInfo($body = null)
+    {
+        // parse inputs
+        $resourcePath = "/activity/trigger-message";
+        $httpBody = '';
+        $queryParams = [];
+        $headerParams = [];
+        $formParams = [];
+        $_header_accept = $this->apiClient->selectHeaderAccept(['application/json', 'application/xml']);
+        if (!is_null($_header_accept)) {
+            $headerParams['Accept'] = $_header_accept;
+        }
+        $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType(['application/json', 'application/xml']);
+
+        // body params
+        $_tempBody = null;
+        if (isset($body)) {
+            $_tempBody = $body;
+        }
+
+        // for model (json/xml)
+        if (isset($_tempBody)) {
+            $httpBody = $_tempBody; // $_tempBody is the method argument, if present
+        } elseif (count($formParams) > 0) {
+            $httpBody = $formParams; // for HTTP post (form)
+        }
+        // this endpoint requires API key authentication
+        $apiKey = $this->apiClient->getApiKeyWithPrefix('ApiKey');
+        if (strlen($apiKey) !== 0) {
+            $headerParams['ApiKey'] = $apiKey;
+        }
+        // make the API Call
+        try {
+            list($response, $statusCode, $httpHeader) = $this->apiClient->callApi(
+                $resourcePath,
+                'POST',
+                $queryParams,
+                $httpBody,
+                $headerParams,
+                '\BumbalCommunicationAdmin\Model\ApiResponse',
+                '/activity/trigger-message'
+            );
+
+            return [$this->apiClient->getSerializer()->deserialize($response, '\BumbalCommunicationAdmin\Model\ApiResponse', $httpHeader), $statusCode, $httpHeader];
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\BumbalCommunicationAdmin\Model\ApiResponse', $e->getResponseHeaders());
+                    $e->setResponseObject($data);
+                    break;
+            }
+
+            throw $e;
+        }
+    }
 }
