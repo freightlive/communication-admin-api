@@ -62,15 +62,13 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\ActivityApi();
-$activity_id = 789; // int | ID of activity to return
-$include_messages = true; // bool | Include messages
-$include_messages_history = true; // bool | Include messages History
+$body = new \BumbalCommunicationAdmin\Model\ActivityModel(); // \BumbalCommunicationAdmin\Model\ActivityModel | Activity
 
 try {
-    $result = $api_instance->retrieveActivity($activity_id, $include_messages, $include_messages_history);
+    $result = $api_instance->registerActivity($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ActivityApi->retrieveActivity: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ActivityApi->registerActivity: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -82,6 +80,7 @@ All URIs are relative to *https://communication.bumbal.eu/admin/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*ActivityApi* | [**registerActivity**](docs/Api/ActivityApi.md#registeractivity) | **POST** /activity/register | Register an Activity
 *ActivityApi* | [**retrieveActivity**](docs/Api/ActivityApi.md#retrieveactivity) | **GET** /activity/{activityId} | Find activity by ID
 *ActivityApi* | [**triggerMessageForActivity**](docs/Api/ActivityApi.md#triggermessageforactivity) | **POST** /activity/trigger-message | Trigger a message for an Activity
 *DeliverymethodsApi* | [**listDeliveryMethods**](docs/Api/DeliverymethodsApi.md#listdeliverymethods) | **GET** /delivery-method | List all DeliveryMethods

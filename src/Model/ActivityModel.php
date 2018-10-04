@@ -57,6 +57,7 @@ class ActivityModel implements ArrayAccess
         'id' => 'int',
         'bumbal_activity_id' => 'int',
         'send_invite' => 'bool',
+        'send_pref_confirmation' => 'bool',
         'send_planned' => 'bool',
         'send_eta' => 'bool',
         'send_executed' => 'bool',
@@ -73,6 +74,7 @@ class ActivityModel implements ArrayAccess
         'id' => null,
         'bumbal_activity_id' => null,
         'send_invite' => null,
+        'send_pref_confirmation' => null,
         'send_planned' => null,
         'send_eta' => null,
         'send_executed' => null,
@@ -99,6 +101,7 @@ class ActivityModel implements ArrayAccess
         'id' => 'id',
         'bumbal_activity_id' => 'bumbal_activity_id',
         'send_invite' => 'send_invite',
+        'send_pref_confirmation' => 'send_pref_confirmation',
         'send_planned' => 'send_planned',
         'send_eta' => 'send_eta',
         'send_executed' => 'send_executed',
@@ -116,6 +119,7 @@ class ActivityModel implements ArrayAccess
         'id' => 'setId',
         'bumbal_activity_id' => 'setBumbalActivityId',
         'send_invite' => 'setSendInvite',
+        'send_pref_confirmation' => 'setSendPrefConfirmation',
         'send_planned' => 'setSendPlanned',
         'send_eta' => 'setSendEta',
         'send_executed' => 'setSendExecuted',
@@ -133,6 +137,7 @@ class ActivityModel implements ArrayAccess
         'id' => 'getId',
         'bumbal_activity_id' => 'getBumbalActivityId',
         'send_invite' => 'getSendInvite',
+        'send_pref_confirmation' => 'getSendPrefConfirmation',
         'send_planned' => 'getSendPlanned',
         'send_eta' => 'getSendEta',
         'send_executed' => 'getSendExecuted',
@@ -175,6 +180,7 @@ class ActivityModel implements ArrayAccess
         $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['bumbal_activity_id'] = isset($data['bumbal_activity_id']) ? $data['bumbal_activity_id'] : null;
         $this->container['send_invite'] = isset($data['send_invite']) ? $data['send_invite'] : null;
+        $this->container['send_pref_confirmation'] = isset($data['send_pref_confirmation']) ? $data['send_pref_confirmation'] : null;
         $this->container['send_planned'] = isset($data['send_planned']) ? $data['send_planned'] : null;
         $this->container['send_eta'] = isset($data['send_eta']) ? $data['send_eta'] : null;
         $this->container['send_executed'] = isset($data['send_executed']) ? $data['send_executed'] : null;
@@ -267,6 +273,27 @@ class ActivityModel implements ArrayAccess
     public function setSendInvite($send_invite)
     {
         $this->container['send_invite'] = $send_invite;
+
+        return $this;
+    }
+
+    /**
+     * Gets send_pref_confirmation
+     * @return bool
+     */
+    public function getSendPrefConfirmation()
+    {
+        return $this->container['send_pref_confirmation'];
+    }
+
+    /**
+     * Sets send_pref_confirmation
+     * @param bool $send_pref_confirmation Send an Confirmation message if prefferences are received
+     * @return $this
+     */
+    public function setSendPrefConfirmation($send_pref_confirmation)
+    {
+        $this->container['send_pref_confirmation'] = $send_pref_confirmation;
 
         return $this;
     }

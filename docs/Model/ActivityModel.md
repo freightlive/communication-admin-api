@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 **id** | **int** | Local Identifier of this activity | [optional] 
 **bumbal_activity_id** | **int** | Bumbal Identifier of this activity | [optional] 
 **send_invite** | **bool** | Send an Invite message for this activity | [optional] 
+**send_pref_confirmation** | **bool** | Send an Confirmation message if prefferences are received | [optional] 
 **send_planned** | **bool** | Send an Planned message for this activity | [optional] 
 **send_eta** | **bool** | Send an ETA message for this activity | [optional] 
 **send_executed** | **bool** | Send an Exceuted message for this activity | [optional] 

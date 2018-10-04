@@ -99,6 +99,13 @@ class ActivityModelTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "send_pref_confirmation"
+     */
+    public function testPropertySendPrefConfirmation()
+    {
+    }
+
+    /**
      * Test attribute "send_planned"
      */
     public function testPropertySendPlanned()

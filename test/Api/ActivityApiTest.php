@@ -73,6 +73,16 @@ class ActivityApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for registerActivity
+     *
+     * Register an Activity.
+     *
+     */
+    public function testRegisterActivity()
+    {
+    }
+
+    /**
      * Test case for retrieveActivity
      *
      * Find activity by ID.
