@@ -62,6 +62,7 @@ class MappingModel implements ArrayAccess
         'delivery_method_name' => 'string',
         'message_type_id' => 'int',
         'message_type_name' => 'string',
+        'no_tag' => 'bool',
         'tags' => 'string'
     ];
 
@@ -78,6 +79,7 @@ class MappingModel implements ArrayAccess
         'delivery_method_name' => null,
         'message_type_id' => null,
         'message_type_name' => null,
+        'no_tag' => null,
         'tags' => null
     ];
 
@@ -104,6 +106,7 @@ class MappingModel implements ArrayAccess
         'delivery_method_name' => 'delivery_method_name',
         'message_type_id' => 'message_type_id',
         'message_type_name' => 'message_type_name',
+        'no_tag' => 'no_tag',
         'tags' => 'tags'
     ];
 
@@ -121,6 +124,7 @@ class MappingModel implements ArrayAccess
         'delivery_method_name' => 'setDeliveryMethodName',
         'message_type_id' => 'setMessageTypeId',
         'message_type_name' => 'setMessageTypeName',
+        'no_tag' => 'setNoTag',
         'tags' => 'setTags'
     ];
 
@@ -138,6 +142,7 @@ class MappingModel implements ArrayAccess
         'delivery_method_name' => 'getDeliveryMethodName',
         'message_type_id' => 'getMessageTypeId',
         'message_type_name' => 'getMessageTypeName',
+        'no_tag' => 'getNoTag',
         'tags' => 'getTags'
     ];
 
@@ -180,6 +185,7 @@ class MappingModel implements ArrayAccess
         $this->container['delivery_method_name'] = isset($data['delivery_method_name']) ? $data['delivery_method_name'] : null;
         $this->container['message_type_id'] = isset($data['message_type_id']) ? $data['message_type_id'] : null;
         $this->container['message_type_name'] = isset($data['message_type_name']) ? $data['message_type_name'] : null;
+        $this->container['no_tag'] = isset($data['no_tag']) ? $data['no_tag'] : null;
         $this->container['tags'] = isset($data['tags']) ? $data['tags'] : null;
     }
 
@@ -372,6 +378,27 @@ class MappingModel implements ArrayAccess
     public function setMessageTypeName($message_type_name)
     {
         $this->container['message_type_name'] = $message_type_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets no_tag
+     * @return bool
+     */
+    public function getNoTag()
+    {
+        return $this->container['no_tag'];
+    }
+
+    /**
+     * Sets no_tag
+     * @param bool $no_tag No Tag Flag
+     * @return $this
+     */
+    public function setNoTag($no_tag)
+    {
+        $this->container['no_tag'] = $no_tag;
 
         return $this;
     }

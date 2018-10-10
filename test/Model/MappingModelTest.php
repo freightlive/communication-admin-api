@@ -134,6 +134,13 @@ class MappingModelTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "no_tag"
+     */
+    public function testPropertyNoTag()
+    {
+    }
+
+    /**
      * Test attribute "tags"
      */
     public function testPropertyTags()
