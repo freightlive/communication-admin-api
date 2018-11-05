@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **retrieveActivity**
-> \BumbalCommunicationAdmin\Model\ActivityModel retrieveActivity($activity_id, $include_messages, $include_messages_history)
+> \BumbalCommunicationAdmin\Model\ActivityModel retrieveActivity($activity_id, $include_messages, $include_messages_history, $check_archive)
 
 Find activity by ID
 
@@ -80,9 +80,10 @@ $api_instance = new BumbalCommunicationAdmin\Api\ActivityApi();
 $activity_id = 789; // int | ID of activity to return
 $include_messages = true; // bool | Include messages
 $include_messages_history = true; // bool | Include messages History
+$check_archive = false; // bool | Check Archive
 
 try {
-    $result = $api_instance->retrieveActivity($activity_id, $include_messages, $include_messages_history);
+    $result = $api_instance->retrieveActivity($activity_id, $include_messages, $include_messages_history, $check_archive);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ActivityApi->retrieveActivity: ', $e->getMessage(), PHP_EOL;
@@ -97,6 +98,7 @@ Name | Type | Description  | Notes
  **activity_id** | **int**| ID of activity to return |
  **include_messages** | **bool**| Include messages | [default to true]
  **include_messages_history** | **bool**| Include messages History | [default to true]
+ **check_archive** | **bool**| Check Archive | [default to false]
 
 ### Return type
 

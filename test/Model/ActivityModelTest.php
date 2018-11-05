@@ -146,4 +146,18 @@ class ActivityModelTest extends \PHPUnit_Framework_TestCase
     public function testPropertyMessages()
     {
     }
+
+    /**
+     * Test attribute "archived"
+     */
+    public function testPropertyArchived()
+    {
+    }
+
+    /**
+     * Test attribute "archive_data"
+     */
+    public function testPropertyArchiveData()
+    {
+    }
 }

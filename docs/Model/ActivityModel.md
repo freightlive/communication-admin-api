@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **send_cancelled** | **bool** | Send an Cancelled message for this activity | [optional] 
 **token** | **string** | GUID used for external identification | [optional] 
 **messages** | [**\BumbalCommunicationAdmin\Model\MessageModel[]**](MessageModel.md) |  | [optional] 
+**archived** | **bool** | Whether this activity is already archived | [optional] 
+**archive_data** | **string** | JSON string with all archived data | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

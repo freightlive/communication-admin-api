@@ -55,7 +55,8 @@ class ActivityOptionsModel implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'include_messages' => 'bool',
-        'include_messages_history' => 'bool'
+        'include_messages_history' => 'bool',
+        'check_archive' => 'bool'
     ];
 
     /**
@@ -64,7 +65,8 @@ class ActivityOptionsModel implements ArrayAccess
       */
     protected static $swaggerFormats = [
         'include_messages' => null,
-        'include_messages_history' => null
+        'include_messages_history' => null,
+        'check_archive' => null
     ];
 
     public static function swaggerTypes()
@@ -83,7 +85,8 @@ class ActivityOptionsModel implements ArrayAccess
      */
     protected static $attributeMap = [
         'include_messages' => 'include_messages',
-        'include_messages_history' => 'include_messages_history'
+        'include_messages_history' => 'include_messages_history',
+        'check_archive' => 'check_archive'
     ];
 
 
@@ -93,7 +96,8 @@ class ActivityOptionsModel implements ArrayAccess
      */
     protected static $setters = [
         'include_messages' => 'setIncludeMessages',
-        'include_messages_history' => 'setIncludeMessagesHistory'
+        'include_messages_history' => 'setIncludeMessagesHistory',
+        'check_archive' => 'setCheckArchive'
     ];
 
 
@@ -103,7 +107,8 @@ class ActivityOptionsModel implements ArrayAccess
      */
     protected static $getters = [
         'include_messages' => 'getIncludeMessages',
-        'include_messages_history' => 'getIncludeMessagesHistory'
+        'include_messages_history' => 'getIncludeMessagesHistory',
+        'check_archive' => 'getCheckArchive'
     ];
 
     public static function attributeMap()
@@ -139,6 +144,7 @@ class ActivityOptionsModel implements ArrayAccess
     {
         $this->container['include_messages'] = isset($data['include_messages']) ? $data['include_messages'] : null;
         $this->container['include_messages_history'] = isset($data['include_messages_history']) ? $data['include_messages_history'] : null;
+        $this->container['check_archive'] = isset($data['check_archive']) ? $data['check_archive'] : null;
     }
 
     /**
@@ -204,6 +210,27 @@ class ActivityOptionsModel implements ArrayAccess
     public function setIncludeMessagesHistory($include_messages_history)
     {
         $this->container['include_messages_history'] = $include_messages_history;
+
+        return $this;
+    }
+
+    /**
+     * Gets check_archive
+     * @return bool
+     */
+    public function getCheckArchive()
+    {
+        return $this->container['check_archive'];
+    }
+
+    /**
+     * Sets check_archive
+     * @param bool $check_archive
+     * @return $this
+     */
+    public function setCheckArchive($check_archive)
+    {
+        $this->container['check_archive'] = $check_archive;
 
         return $this;
     }

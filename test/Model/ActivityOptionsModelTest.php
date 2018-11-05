@@ -90,4 +90,11 @@ class ActivityOptionsModelTest extends \PHPUnit_Framework_TestCase
     public function testPropertyIncludeMessagesHistory()
     {
     }
+
+    /**
+     * Test attribute "check_archive"
+     */
+    public function testPropertyCheckArchive()
+    {
+    }
 }

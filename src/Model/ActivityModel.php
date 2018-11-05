@@ -63,7 +63,9 @@ class ActivityModel implements ArrayAccess
         'send_executed' => 'bool',
         'send_cancelled' => 'bool',
         'token' => 'string',
-        'messages' => '\BumbalCommunicationAdmin\Model\MessageModel[]'
+        'messages' => '\BumbalCommunicationAdmin\Model\MessageModel[]',
+        'archived' => 'bool',
+        'archive_data' => 'string'
     ];
 
     /**
@@ -80,7 +82,9 @@ class ActivityModel implements ArrayAccess
         'send_executed' => null,
         'send_cancelled' => null,
         'token' => null,
-        'messages' => null
+        'messages' => null,
+        'archived' => null,
+        'archive_data' => null
     ];
 
     public static function swaggerTypes()
@@ -107,7 +111,9 @@ class ActivityModel implements ArrayAccess
         'send_executed' => 'send_executed',
         'send_cancelled' => 'send_cancelled',
         'token' => 'token',
-        'messages' => 'messages'
+        'messages' => 'messages',
+        'archived' => 'archived',
+        'archive_data' => 'archive_data'
     ];
 
 
@@ -125,7 +131,9 @@ class ActivityModel implements ArrayAccess
         'send_executed' => 'setSendExecuted',
         'send_cancelled' => 'setSendCancelled',
         'token' => 'setToken',
-        'messages' => 'setMessages'
+        'messages' => 'setMessages',
+        'archived' => 'setArchived',
+        'archive_data' => 'setArchiveData'
     ];
 
 
@@ -143,7 +151,9 @@ class ActivityModel implements ArrayAccess
         'send_executed' => 'getSendExecuted',
         'send_cancelled' => 'getSendCancelled',
         'token' => 'getToken',
-        'messages' => 'getMessages'
+        'messages' => 'getMessages',
+        'archived' => 'getArchived',
+        'archive_data' => 'getArchiveData'
     ];
 
     public static function attributeMap()
@@ -187,6 +197,8 @@ class ActivityModel implements ArrayAccess
         $this->container['send_cancelled'] = isset($data['send_cancelled']) ? $data['send_cancelled'] : null;
         $this->container['token'] = isset($data['token']) ? $data['token'] : null;
         $this->container['messages'] = isset($data['messages']) ? $data['messages'] : null;
+        $this->container['archived'] = isset($data['archived']) ? $data['archived'] : null;
+        $this->container['archive_data'] = isset($data['archive_data']) ? $data['archive_data'] : null;
     }
 
     /**
@@ -420,6 +432,48 @@ class ActivityModel implements ArrayAccess
     public function setMessages($messages)
     {
         $this->container['messages'] = $messages;
+
+        return $this;
+    }
+
+    /**
+     * Gets archived
+     * @return bool
+     */
+    public function getArchived()
+    {
+        return $this->container['archived'];
+    }
+
+    /**
+     * Sets archived
+     * @param bool $archived Whether this activity is already archived
+     * @return $this
+     */
+    public function setArchived($archived)
+    {
+        $this->container['archived'] = $archived;
+
+        return $this;
+    }
+
+    /**
+     * Gets archive_data
+     * @return string
+     */
+    public function getArchiveData()
+    {
+        return $this->container['archive_data'];
+    }
+
+    /**
+     * Sets archive_data
+     * @param string $archive_data JSON string with all archived data
+     * @return $this
+     */
+    public function setArchiveData($archive_data)
+    {
+        $this->container['archive_data'] = $archive_data;
 
         return $this;
     }

@@ -175,12 +175,13 @@ class ActivityApi
      * @param int $activity_id ID of activity to return (required)
      * @param bool $include_messages Include messages (required)
      * @param bool $include_messages_history Include messages History (required)
+     * @param bool $check_archive Check Archive (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
      * @return \BumbalCommunicationAdmin\Model\ActivityModel
      */
-    public function retrieveActivity($activity_id, $include_messages, $include_messages_history)
+    public function retrieveActivity($activity_id, $include_messages, $include_messages_history, $check_archive)
     {
-        list($response) = $this->retrieveActivityWithHttpInfo($activity_id, $include_messages, $include_messages_history);
+        list($response) = $this->retrieveActivityWithHttpInfo($activity_id, $include_messages, $include_messages_history, $check_archive);
         return $response;
     }
 
@@ -192,10 +193,11 @@ class ActivityApi
      * @param int $activity_id ID of activity to return (required)
      * @param bool $include_messages Include messages (required)
      * @param bool $include_messages_history Include messages History (required)
+     * @param bool $check_archive Check Archive (required)
      * @throws \BumbalCommunicationAdmin\ApiException on non-2xx response
      * @return array of \BumbalCommunicationAdmin\Model\ActivityModel, HTTP status code, HTTP response headers (array of strings)
      */
-    public function retrieveActivityWithHttpInfo($activity_id, $include_messages, $include_messages_history)
+    public function retrieveActivityWithHttpInfo($activity_id, $include_messages, $include_messages_history, $check_archive)
     {
         // verify the required parameter 'activity_id' is set
         if ($activity_id === null) {
@@ -208,6 +210,10 @@ class ActivityApi
         // verify the required parameter 'include_messages_history' is set
         if ($include_messages_history === null) {
             throw new \InvalidArgumentException('Missing the required parameter $include_messages_history when calling retrieveActivity');
+        }
+        // verify the required parameter 'check_archive' is set
+        if ($check_archive === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $check_archive when calling retrieveActivity');
         }
         // parse inputs
         $resourcePath = "/activity/{activityId}";
@@ -228,6 +234,10 @@ class ActivityApi
         // query params
         if ($include_messages_history !== null) {
             $queryParams['include_messages_history'] = $this->apiClient->getSerializer()->toQueryValue($include_messages_history);
+        }
+        // query params
+        if ($check_archive !== null) {
+            $queryParams['check_archive'] = $this->apiClient->getSerializer()->toQueryValue($check_archive);
         }
         // path params
         if ($activity_id !== null) {
