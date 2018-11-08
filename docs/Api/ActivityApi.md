@@ -4,10 +4,61 @@ All URIs are relative to *https://communication.bumbal.eu/admin/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**generateMessageForActivity**](ActivityApi.md#generateMessageForActivity) | **POST** /activity/generate-message | Generate a message for an Activity
 [**registerActivity**](ActivityApi.md#registerActivity) | **POST** /activity/register | Register an Activity
 [**retrieveActivity**](ActivityApi.md#retrieveActivity) | **GET** /activity/{activityId} | Find activity by ID
 [**triggerMessageForActivity**](ActivityApi.md#triggerMessageForActivity) | **POST** /activity/trigger-message | Trigger a message for an Activity
 
+
+# **generateMessageForActivity**
+> \BumbalCommunicationAdmin\Model\ApiResponse generateMessageForActivity($body)
+
+Generate a message for an Activity
+
+Generate a message for an Activity
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: api_key
+BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('ApiKey', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
+
+$api_instance = new BumbalCommunicationAdmin\Api\ActivityApi();
+$body = new \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel(); // \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel | Schedule Message Args
+
+try {
+    $result = $api_instance->generateMessageForActivity($body);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ActivityApi->generateMessageForActivity: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**\BumbalCommunicationAdmin\Model\TriggerMessageArgsModel**](../Model/TriggerMessageArgsModel.md)| Schedule Message Args | [optional]
+
+### Return type
+
+[**\BumbalCommunicationAdmin\Model\ApiResponse**](../Model/ApiResponse.md)
+
+### Authorization
+
+[api_key](../../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **registerActivity**
 > \BumbalCommunicationAdmin\Model\ApiResponse registerActivity($body)

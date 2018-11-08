@@ -62,13 +62,13 @@ BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKey('Ap
 // BumbalCommunicationAdmin\Configuration::getDefaultConfiguration()->setApiKeyPrefix('ApiKey', 'Bearer');
 
 $api_instance = new BumbalCommunicationAdmin\Api\ActivityApi();
-$body = new \BumbalCommunicationAdmin\Model\ActivityModel(); // \BumbalCommunicationAdmin\Model\ActivityModel | Activity
+$body = new \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel(); // \BumbalCommunicationAdmin\Model\TriggerMessageArgsModel | Schedule Message Args
 
 try {
-    $result = $api_instance->registerActivity($body);
+    $result = $api_instance->generateMessageForActivity($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ActivityApi->registerActivity: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ActivityApi->generateMessageForActivity: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
@@ -80,6 +80,7 @@ All URIs are relative to *https://communication.bumbal.eu/admin/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*ActivityApi* | [**generateMessageForActivity**](docs/Api/ActivityApi.md#generatemessageforactivity) | **POST** /activity/generate-message | Generate a message for an Activity
 *ActivityApi* | [**registerActivity**](docs/Api/ActivityApi.md#registeractivity) | **POST** /activity/register | Register an Activity
 *ActivityApi* | [**retrieveActivity**](docs/Api/ActivityApi.md#retrieveactivity) | **GET** /activity/{activityId} | Find activity by ID
 *ActivityApi* | [**triggerMessageForActivity**](docs/Api/ActivityApi.md#triggermessageforactivity) | **POST** /activity/trigger-message | Trigger a message for an Activity

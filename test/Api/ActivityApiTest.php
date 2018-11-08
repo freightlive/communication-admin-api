@@ -73,6 +73,16 @@ class ActivityApiTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test case for generateMessageForActivity
+     *
+     * Generate a message for an Activity.
+     *
+     */
+    public function testGenerateMessageForActivity()
+    {
+    }
+
+    /**
      * Test case for registerActivity
      *
      * Register an Activity.
