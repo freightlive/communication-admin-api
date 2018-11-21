@@ -122,11 +122,11 @@ class TriggerMessageArgsModel implements ArrayAccess
     }
 
     const MESSAGE_TYPE_INVITE = 'send_invite';
-    const MESSAGE_TYPE_PREFFED = 'send_preffed';
+    const MESSAGE_TYPE_PREF_CONFIRMATION = 'send_pref_confirmation';
     const MESSAGE_TYPE_ETA = 'send_eta';
     const MESSAGE_TYPE_PLANNED = 'send_planned';
     const MESSAGE_TYPE_CANCELLED = 'send_cancelled';
-    const MESSAGE_TYPE_DELIVERED = 'send_delivered';
+    const MESSAGE_TYPE_EXECUTED = 'send_executed';
     
 
     
@@ -138,11 +138,11 @@ class TriggerMessageArgsModel implements ArrayAccess
     {
         return [
             self::MESSAGE_TYPE_INVITE,
-            self::MESSAGE_TYPE_PREFFED,
+            self::MESSAGE_TYPE_PREF_CONFIRMATION,
             self::MESSAGE_TYPE_ETA,
             self::MESSAGE_TYPE_PLANNED,
             self::MESSAGE_TYPE_CANCELLED,
-            self::MESSAGE_TYPE_DELIVERED,
+            self::MESSAGE_TYPE_EXECUTED,
         ];
     }
     
