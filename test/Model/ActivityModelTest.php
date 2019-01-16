@@ -113,6 +113,13 @@ class ActivityModelTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "send_reminder"
+     */
+    public function testPropertySendReminder()
+    {
+    }
+
+    /**
      * Test attribute "send_eta"
      */
     public function testPropertySendEta()

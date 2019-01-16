@@ -59,7 +59,8 @@ class TemplateModel implements ArrayAccess
         'description' => 'string',
         'subject' => 'string',
         'content_html' => 'string',
-        'content_text' => 'string'
+        'content_text' => 'string',
+        'include_attachments' => 'bool'
     ];
 
     /**
@@ -72,7 +73,8 @@ class TemplateModel implements ArrayAccess
         'description' => null,
         'subject' => null,
         'content_html' => null,
-        'content_text' => null
+        'content_text' => null,
+        'include_attachments' => null
     ];
 
     public static function swaggerTypes()
@@ -95,7 +97,8 @@ class TemplateModel implements ArrayAccess
         'description' => 'description',
         'subject' => 'subject',
         'content_html' => 'content_html',
-        'content_text' => 'content_text'
+        'content_text' => 'content_text',
+        'include_attachments' => 'include_attachments'
     ];
 
 
@@ -109,7 +112,8 @@ class TemplateModel implements ArrayAccess
         'description' => 'setDescription',
         'subject' => 'setSubject',
         'content_html' => 'setContentHtml',
-        'content_text' => 'setContentText'
+        'content_text' => 'setContentText',
+        'include_attachments' => 'setIncludeAttachments'
     ];
 
 
@@ -123,7 +127,8 @@ class TemplateModel implements ArrayAccess
         'description' => 'getDescription',
         'subject' => 'getSubject',
         'content_html' => 'getContentHtml',
-        'content_text' => 'getContentText'
+        'content_text' => 'getContentText',
+        'include_attachments' => 'getIncludeAttachments'
     ];
 
     public static function attributeMap()
@@ -163,6 +168,7 @@ class TemplateModel implements ArrayAccess
         $this->container['subject'] = isset($data['subject']) ? $data['subject'] : null;
         $this->container['content_html'] = isset($data['content_html']) ? $data['content_html'] : null;
         $this->container['content_text'] = isset($data['content_text']) ? $data['content_text'] : null;
+        $this->container['include_attachments'] = isset($data['include_attachments']) ? $data['include_attachments'] : null;
     }
 
     /**
@@ -312,6 +318,27 @@ class TemplateModel implements ArrayAccess
     public function setContentText($content_text)
     {
         $this->container['content_text'] = $content_text;
+
+        return $this;
+    }
+
+    /**
+     * Gets include_attachments
+     * @return bool
+     */
+    public function getIncludeAttachments()
+    {
+        return $this->container['include_attachments'];
+    }
+
+    /**
+     * Sets include_attachments
+     * @param bool $include_attachments Include the files associated with this activity as attachment, mail only
+     * @return $this
+     */
+    public function setIncludeAttachments($include_attachments)
+    {
+        $this->container['include_attachments'] = $include_attachments;
 
         return $this;
     }

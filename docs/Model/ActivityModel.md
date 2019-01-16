@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **send_invite** | **bool** | Send an Invite message for this activity | [optional] 
 **send_pref_confirmation** | **bool** | Send an Confirmation message if prefferences are received | [optional] 
 **send_planned** | **bool** | Send an Planned message for this activity | [optional] 
+**send_reminder** | **bool** | Send an Reminder message for this activity | [optional] 
 **send_eta** | **bool** | Send an ETA message for this activity | [optional] 
 **send_executed** | **bool** | Send an Exceuted message for this activity | [optional] 
 **send_cancelled** | **bool** | Send an Cancelled message for this activity | [optional] 

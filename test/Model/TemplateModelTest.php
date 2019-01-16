@@ -118,4 +118,11 @@ class TemplateModelTest extends \PHPUnit_Framework_TestCase
     public function testPropertyContentText()
     {
     }
+
+    /**
+     * Test attribute "include_attachments"
+     */
+    public function testPropertyIncludeAttachments()
+    {
+    }
 }

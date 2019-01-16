@@ -59,6 +59,7 @@ class ActivityModel implements ArrayAccess
         'send_invite' => 'bool',
         'send_pref_confirmation' => 'bool',
         'send_planned' => 'bool',
+        'send_reminder' => 'bool',
         'send_eta' => 'bool',
         'send_executed' => 'bool',
         'send_cancelled' => 'bool',
@@ -78,6 +79,7 @@ class ActivityModel implements ArrayAccess
         'send_invite' => null,
         'send_pref_confirmation' => null,
         'send_planned' => null,
+        'send_reminder' => null,
         'send_eta' => null,
         'send_executed' => null,
         'send_cancelled' => null,
@@ -107,6 +109,7 @@ class ActivityModel implements ArrayAccess
         'send_invite' => 'send_invite',
         'send_pref_confirmation' => 'send_pref_confirmation',
         'send_planned' => 'send_planned',
+        'send_reminder' => 'send_reminder',
         'send_eta' => 'send_eta',
         'send_executed' => 'send_executed',
         'send_cancelled' => 'send_cancelled',
@@ -127,6 +130,7 @@ class ActivityModel implements ArrayAccess
         'send_invite' => 'setSendInvite',
         'send_pref_confirmation' => 'setSendPrefConfirmation',
         'send_planned' => 'setSendPlanned',
+        'send_reminder' => 'setSendReminder',
         'send_eta' => 'setSendEta',
         'send_executed' => 'setSendExecuted',
         'send_cancelled' => 'setSendCancelled',
@@ -147,6 +151,7 @@ class ActivityModel implements ArrayAccess
         'send_invite' => 'getSendInvite',
         'send_pref_confirmation' => 'getSendPrefConfirmation',
         'send_planned' => 'getSendPlanned',
+        'send_reminder' => 'getSendReminder',
         'send_eta' => 'getSendEta',
         'send_executed' => 'getSendExecuted',
         'send_cancelled' => 'getSendCancelled',
@@ -192,6 +197,7 @@ class ActivityModel implements ArrayAccess
         $this->container['send_invite'] = isset($data['send_invite']) ? $data['send_invite'] : null;
         $this->container['send_pref_confirmation'] = isset($data['send_pref_confirmation']) ? $data['send_pref_confirmation'] : null;
         $this->container['send_planned'] = isset($data['send_planned']) ? $data['send_planned'] : null;
+        $this->container['send_reminder'] = isset($data['send_reminder']) ? $data['send_reminder'] : null;
         $this->container['send_eta'] = isset($data['send_eta']) ? $data['send_eta'] : null;
         $this->container['send_executed'] = isset($data['send_executed']) ? $data['send_executed'] : null;
         $this->container['send_cancelled'] = isset($data['send_cancelled']) ? $data['send_cancelled'] : null;
@@ -327,6 +333,27 @@ class ActivityModel implements ArrayAccess
     public function setSendPlanned($send_planned)
     {
         $this->container['send_planned'] = $send_planned;
+
+        return $this;
+    }
+
+    /**
+     * Gets send_reminder
+     * @return bool
+     */
+    public function getSendReminder()
+    {
+        return $this->container['send_reminder'];
+    }
+
+    /**
+     * Sets send_reminder
+     * @param bool $send_reminder Send an Reminder message for this activity
+     * @return $this
+     */
+    public function setSendReminder($send_reminder)
+    {
+        $this->container['send_reminder'] = $send_reminder;
 
         return $this;
     }
