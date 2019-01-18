@@ -85,6 +85,13 @@ class TriggerMessageArgsModelTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test attribute "schedule"
+     */
+    public function testPropertySchedule()
+    {
+    }
+
+    /**
      * Test attribute "message_type"
      */
     public function testPropertyMessageType()

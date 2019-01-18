@@ -55,6 +55,7 @@ class TriggerMessageArgsModel implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'activity_id' => 'int',
+        'schedule' => 'bool',
         'message_type' => 'string'
     ];
 
@@ -64,6 +65,7 @@ class TriggerMessageArgsModel implements ArrayAccess
       */
     protected static $swaggerFormats = [
         'activity_id' => null,
+        'schedule' => null,
         'message_type' => null
     ];
 
@@ -83,6 +85,7 @@ class TriggerMessageArgsModel implements ArrayAccess
      */
     protected static $attributeMap = [
         'activity_id' => 'activity_id',
+        'schedule' => 'schedule',
         'message_type' => 'message_type'
     ];
 
@@ -93,6 +96,7 @@ class TriggerMessageArgsModel implements ArrayAccess
      */
     protected static $setters = [
         'activity_id' => 'setActivityId',
+        'schedule' => 'setSchedule',
         'message_type' => 'setMessageType'
     ];
 
@@ -103,6 +107,7 @@ class TriggerMessageArgsModel implements ArrayAccess
      */
     protected static $getters = [
         'activity_id' => 'getActivityId',
+        'schedule' => 'getSchedule',
         'message_type' => 'getMessageType'
     ];
 
@@ -162,6 +167,7 @@ class TriggerMessageArgsModel implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['activity_id'] = isset($data['activity_id']) ? $data['activity_id'] : null;
+        $this->container['schedule'] = isset($data['schedule']) ? $data['schedule'] : null;
         $this->container['message_type'] = isset($data['message_type']) ? $data['message_type'] : null;
     }
 
@@ -219,6 +225,27 @@ class TriggerMessageArgsModel implements ArrayAccess
     public function setActivityId($activity_id)
     {
         $this->container['activity_id'] = $activity_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets schedule
+     * @return bool
+     */
+    public function getSchedule()
+    {
+        return $this->container['schedule'];
+    }
+
+    /**
+     * Sets schedule
+     * @param bool $schedule
+     * @return $this
+     */
+    public function setSchedule($schedule)
+    {
+        $this->container['schedule'] = $schedule;
 
         return $this;
     }
