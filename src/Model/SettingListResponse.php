@@ -189,7 +189,7 @@ class SettingListResponse implements ArrayAccess
 
     /**
      * Sets items
-     * @param \BumbalCommunicationAdmin\Model\SettingModel[] $items
+     * @param \BumbalCommunicationAdmin\Model\SettingModel[] $items 
      * @return $this
      */
     public function setItems($items)

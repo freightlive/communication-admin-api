@@ -189,7 +189,7 @@ class ApiResponse implements ArrayAccess
 
     /**
      * Sets code
-     * @param int $code
+     * @param int $code 
      * @return $this
      */
     public function setCode($code)
@@ -210,7 +210,7 @@ class ApiResponse implements ArrayAccess
 
     /**
      * Sets type
-     * @param string $type
+     * @param string $type 
      * @return $this
      */
     public function setType($type)
@@ -231,7 +231,7 @@ class ApiResponse implements ArrayAccess
 
     /**
      * Sets message
-     * @param string $message
+     * @param string $message 
      * @return $this
      */
     public function setMessage($message)
@@ -252,7 +252,7 @@ class ApiResponse implements ArrayAccess
 
     /**
      * Sets additional_data
-     * @param object $additional_data
+     * @param object $additional_data 
      * @return $this
      */
     public function setAdditionalData($additional_data)

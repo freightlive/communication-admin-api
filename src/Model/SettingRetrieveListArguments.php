@@ -267,7 +267,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\Model\SettingOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\SettingOptionsModel $options 
      * @return $this
      */
     public function setOptions($options)
@@ -288,7 +288,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\Model\SettingFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\SettingFiltersModel $filters 
      * @return $this
      */
     public function setFilters($filters)
@@ -369,7 +369,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets limit
-     * @param int $limit
+     * @param int $limit 
      * @return $this
      */
     public function setLimit($limit)
@@ -390,7 +390,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets offset
-     * @param int $offset
+     * @param int $offset 
      * @return $this
      */
     public function setOffset($offset)
@@ -411,7 +411,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets search_text
-     * @param string $search_text
+     * @param string $search_text 
      * @return $this
      */
     public function setSearchText($search_text)
@@ -432,7 +432,7 @@ class SettingRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets as_list
-     * @param bool $as_list
+     * @param bool $as_list 
      * @return $this
      */
     public function setAsList($as_list)

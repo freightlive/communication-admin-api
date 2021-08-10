@@ -189,7 +189,7 @@ class TemplateListResponse implements ArrayAccess
 
     /**
      * Sets items
-     * @param \BumbalCommunicationAdmin\Model\TemplateModel[] $items
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel[] $items 
      * @return $this
      */
     public function setItems($items)

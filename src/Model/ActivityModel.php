@@ -453,7 +453,7 @@ class ActivityModel implements ArrayAccess
 
     /**
      * Sets messages
-     * @param \BumbalCommunicationAdmin\Model\MessageModel[] $messages
+     * @param \BumbalCommunicationAdmin\Model\MessageModel[] $messages 
      * @return $this
      */
     public function setMessages($messages)

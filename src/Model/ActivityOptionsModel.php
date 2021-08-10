@@ -183,7 +183,7 @@ class ActivityOptionsModel implements ArrayAccess
 
     /**
      * Sets include_messages
-     * @param bool $include_messages
+     * @param bool $include_messages 
      * @return $this
      */
     public function setIncludeMessages($include_messages)
@@ -204,7 +204,7 @@ class ActivityOptionsModel implements ArrayAccess
 
     /**
      * Sets include_messages_history
-     * @param bool $include_messages_history
+     * @param bool $include_messages_history 
      * @return $this
      */
     public function setIncludeMessagesHistory($include_messages_history)
@@ -225,7 +225,7 @@ class ActivityOptionsModel implements ArrayAccess
 
     /**
      * Sets check_archive
-     * @param bool $check_archive
+     * @param bool $check_archive 
      * @return $this
      */
     public function setCheckArchive($check_archive)

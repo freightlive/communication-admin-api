@@ -189,7 +189,7 @@ class MappingOptionsModel implements ArrayAccess
 
     /**
      * Sets include_message_type_name
-     * @param bool $include_message_type_name
+     * @param bool $include_message_type_name 
      * @return $this
      */
     public function setIncludeMessageTypeName($include_message_type_name)
@@ -210,7 +210,7 @@ class MappingOptionsModel implements ArrayAccess
 
     /**
      * Sets include_delivery_method_name
-     * @param bool $include_delivery_method_name
+     * @param bool $include_delivery_method_name 
      * @return $this
      */
     public function setIncludeDeliveryMethodName($include_delivery_method_name)
@@ -231,7 +231,7 @@ class MappingOptionsModel implements ArrayAccess
 
     /**
      * Sets include_template_name
-     * @param bool $include_template_name
+     * @param bool $include_template_name 
      * @return $this
      */
     public function setIncludeTemplateName($include_template_name)
@@ -252,7 +252,7 @@ class MappingOptionsModel implements ArrayAccess
 
     /**
      * Sets include_template_object
-     * @param bool $include_template_object
+     * @param bool $include_template_object 
      * @return $this
      */
     public function setIncludeTemplateObject($include_template_object)

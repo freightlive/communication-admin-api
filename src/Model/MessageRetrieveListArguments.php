@@ -189,7 +189,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets options
-     * @param \BumbalCommunicationAdmin\Model\MessageOptionsModel $options
+     * @param \BumbalCommunicationAdmin\Model\MessageOptionsModel $options 
      * @return $this
      */
     public function setOptions($options)
@@ -210,7 +210,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets filters
-     * @param \BumbalCommunicationAdmin\Model\MessageFiltersModel $filters
+     * @param \BumbalCommunicationAdmin\Model\MessageFiltersModel $filters 
      * @return $this
      */
     public function setFilters($filters)
@@ -231,7 +231,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets limit
-     * @param int $limit
+     * @param int $limit 
      * @return $this
      */
     public function setLimit($limit)
@@ -252,7 +252,7 @@ class MessageRetrieveListArguments implements ArrayAccess
 
     /**
      * Sets offset
-     * @param int $offset
+     * @param int $offset 
      * @return $this
      */
     public function setOffset($offset)

@@ -54,7 +54,7 @@ class TemplateOptionsModel implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'exclude_template_content' => 'bool'
     ];
 
     /**
@@ -62,7 +62,7 @@ class TemplateOptionsModel implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        
+        'exclude_template_content' => null
     ];
 
     public static function swaggerTypes()
@@ -80,7 +80,7 @@ class TemplateOptionsModel implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'exclude_template_content' => 'exclude_template_content'
     ];
 
 
@@ -89,7 +89,7 @@ class TemplateOptionsModel implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'exclude_template_content' => 'setExcludeTemplateContent'
     ];
 
 
@@ -98,7 +98,7 @@ class TemplateOptionsModel implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'exclude_template_content' => 'getExcludeTemplateContent'
     ];
 
     public static function attributeMap()
@@ -132,6 +132,7 @@ class TemplateOptionsModel implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['exclude_template_content'] = isset($data['exclude_template_content']) ? $data['exclude_template_content'] : null;
     }
 
     /**
@@ -158,6 +159,27 @@ class TemplateOptionsModel implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets exclude_template_content
+     * @return bool
+     */
+    public function getExcludeTemplateContent()
+    {
+        return $this->container['exclude_template_content'];
+    }
+
+    /**
+     * Sets exclude_template_content
+     * @param bool $exclude_template_content 
+     * @return $this
+     */
+    public function setExcludeTemplateContent($exclude_template_content)
+    {
+        $this->container['exclude_template_content'] = $exclude_template_content;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset

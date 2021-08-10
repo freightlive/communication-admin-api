@@ -288,7 +288,7 @@ class MappingModel implements ArrayAccess
 
     /**
      * Sets template
-     * @param \BumbalCommunicationAdmin\Model\TemplateModel $template
+     * @param \BumbalCommunicationAdmin\Model\TemplateModel $template 
      * @return $this
      */
     public function setTemplate($template)

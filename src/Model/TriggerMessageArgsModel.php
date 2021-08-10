@@ -219,7 +219,7 @@ class TriggerMessageArgsModel implements ArrayAccess
 
     /**
      * Sets activity_id
-     * @param int $activity_id
+     * @param int $activity_id 
      * @return $this
      */
     public function setActivityId($activity_id)
@@ -240,7 +240,7 @@ class TriggerMessageArgsModel implements ArrayAccess
 
     /**
      * Sets schedule
-     * @param bool $schedule
+     * @param bool $schedule 
      * @return $this
      */
     public function setSchedule($schedule)

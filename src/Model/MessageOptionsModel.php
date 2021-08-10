@@ -195,7 +195,7 @@ class MessageOptionsModel implements ArrayAccess
 
     /**
      * Sets include_delivery_method_name
-     * @param bool $include_delivery_method_name
+     * @param bool $include_delivery_method_name 
      * @return $this
      */
     public function setIncludeDeliveryMethodName($include_delivery_method_name)
@@ -216,7 +216,7 @@ class MessageOptionsModel implements ArrayAccess
 
     /**
      * Sets include_template_object
-     * @param bool $include_template_object
+     * @param bool $include_template_object 
      * @return $this
      */
     public function setIncludeTemplateObject($include_template_object)
@@ -237,7 +237,7 @@ class MessageOptionsModel implements ArrayAccess
 
     /**
      * Sets include_message_type_name
-     * @param bool $include_message_type_name
+     * @param bool $include_message_type_name 
      * @return $this
      */
     public function setIncludeMessageTypeName($include_message_type_name)
@@ -258,7 +258,7 @@ class MessageOptionsModel implements ArrayAccess
 
     /**
      * Sets include_message_content
-     * @param bool $include_message_content
+     * @param bool $include_message_content 
      * @return $this
      */
     public function setIncludeMessageContent($include_message_content)
@@ -279,7 +279,7 @@ class MessageOptionsModel implements ArrayAccess
 
     /**
      * Sets include_message_history
-     * @param bool $include_message_history
+     * @param bool $include_message_history 
      * @return $this
      */
     public function setIncludeMessageHistory($include_message_history)

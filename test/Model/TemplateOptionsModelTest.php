@@ -76,4 +76,11 @@ class TemplateOptionsModelTest extends \PHPUnit_Framework_TestCase
     public function testTemplateOptionsModel()
     {
     }
+
+    /**
+     * Test attribute "exclude_template_content"
+     */
+    public function testPropertyExcludeTemplateContent()
+    {
+    }
 }
